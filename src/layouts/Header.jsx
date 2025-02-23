@@ -1,40 +1,38 @@
-import { motion } from "framer-motion";
 import React, { useState } from "react";
+import MenuButton from "../components/MenuButton";
+import { motion } from "framer-motion";
+
+const variants = {
+   open: {
+      width: "25rem",
+      height: "30rem",
+      top: "-1rem",
+      left: "1rem",
+      transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] },
+   },
+   closed: {
+      width: "5rem",
+      height: "2rem",
+      top: "0rem",
+      left: "0rem",
+      transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] },
+   },
+};
 
 const Header = () => {
    const [isActive, setIsActive] = useState(false);
+
    return (
-      <div className="flex justify-between px-40 py-40">
-         <div>logo</div>
-         <div
-            onClick={() => setIsActive(!isActive)}
-            className="menu_btn"
-         >
-            {/* Sliding Animation */}
-            <motion.div
-               className="slider"
-               animate={{ top: isActive ? "-100%" : "0%" }}
-               transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-            >
-               <div className="el">
-                  <PerspectiveText label={"menu"} />
-               </div>
-               <div className="el">
-                  <PerspectiveText label={"close"} />
-               </div>
-            </motion.div>
-         </div>
+      <div className="header flex justify-between">
+         <motion.div
+            className="menu"
+            variants={variants}
+            animate={isActive ? "open" : "closed"}
+            initial="closed"
+         ></motion.div>
+         <MenuButton isActive={isActive} setIsActive={setIsActive} />
       </div>
    );
 };
 
 export default Header;
-
-function PerspectiveText({ label }) {
-   return (
-      <div className="perspective_text">
-         <p>{label}</p>
-         <p>{label}</p>
-      </div>
-   );
-}

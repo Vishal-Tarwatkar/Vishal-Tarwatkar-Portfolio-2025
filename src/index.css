@@ -2,12 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+.header {   
+   position: fixed;
+   right: 50px;
+   top: 50px;
+}
+
+.menu {
+   position: relative;
+   width: 20rem;
+   height: 30rem;
+   background-color: #c9fd74;
+   border-radius: 1.2rem;
+}
+
 .menu_btn {
    width: 5rem;
    height: 2rem;
+   position: absolute;
+   top: 0;
+   right: 0;
    cursor: pointer;
-   border-radius: 2em;
-   position: relative;
+   border-radius: 2rem;
    overflow: hidden;
 }
 
