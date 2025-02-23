@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 .menu_btn {
+   width: 5rem;
+   height: 2rem;
    cursor: pointer;
    border-radius: 2em;
    position: relative;
@@ -28,14 +30,36 @@
    color: #c9fd74;
 }
 
+.el:hover .perspective_text {
+   transform: rotateX(90deg);
+}
+
+.el:hover .perspective_text p:nth-of-type(1) {
+   transform: translateY(-100%);
+   opacity: 0;
+}
+
+.el:hover .perspective_text p:nth-of-type(2) {
+   opacity: 1;
+}
+
 .perspective_text {
    width: 100%;
    height: 100%;
    display: flex;
    align-items: center;
    justify-content: center;
+   transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+   transform-style: preserve-3d;
+}
+
+.perspective_text p {
+   transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 .perspective_text p:nth-of-type(2) {
    position: absolute;
+   transform: rotateX(-90deg) translateY(0.7rem);
+   transform-origin: bottom center;
+   opacity: 0;
 }

@@ -8,7 +8,7 @@ const Header = () => {
          <div>logo</div>
          <div
             onClick={() => setIsActive(!isActive)}
-            className="menu_btn h-8 w-20"
+            className="menu_btn"
          >
             {/* Sliding Animation */}
             <motion.div
