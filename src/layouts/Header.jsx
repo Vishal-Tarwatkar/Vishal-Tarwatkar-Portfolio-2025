@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MenuButton from "../components/MenuButton";
 import { motion } from "framer-motion";
+import Nav from "../components/Nav";
 
 const variants = {
    open: {
@@ -23,14 +24,19 @@ const Header = () => {
    const [isActive, setIsActive] = useState(false);
 
    return (
-      <div className="header flex justify-between">
-         <motion.div
-            className="menu"
-            variants={variants}
-            animate={isActive ? "open" : "closed"}
-            initial="closed"
-         ></motion.div>
-         <MenuButton isActive={isActive} setIsActive={setIsActive} />
+      <div className="header w-full fixed flex justify-between px-8 py-4">
+         <div>Logo</div>
+         <div className="menu_cnt relative">
+            <motion.div
+               className="menu"
+               variants={variants}
+               animate={isActive ? "open" : "closed"}
+               initial="closed"
+            >
+               {isActive && <Nav />}
+            </motion.div>
+            <MenuButton isActive={isActive} setIsActive={setIsActive} />
+         </div>
       </div>
    );
 };

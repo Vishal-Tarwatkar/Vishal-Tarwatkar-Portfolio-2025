@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.header {   
+/*========================= Header =========================*/
+/*================ Menu ================*/
+.manu_cnt {
    position: fixed;
-   right: 50px;
-   top: 50px;
 }
 
 .menu {
@@ -16,6 +16,14 @@
    border-radius: 1.2rem;
 }
 
+/*================ Nav ================*/
+.nav {
+   height: 100%;
+   padding: 5rem 3rem;
+   box-sizing: border-box;
+}
+
+/*================ Menu Button ================*/
 .menu_btn {
    width: 5rem;
    height: 2rem;
