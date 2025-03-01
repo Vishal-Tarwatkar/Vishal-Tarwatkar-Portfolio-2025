@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+body {
+   background-color: black;
+}
 
 /*========================= Header =========================*/
 /*================ Menu ================*/
@@ -12,7 +21,7 @@
    position: relative;
    width: 20rem;
    height: 30rem;
-   background-color: #c9fd74;
+   background-color: #fea75f;
    border-radius: 1.2rem;
 }
 
@@ -44,14 +53,14 @@
 .el {
    width: 100%;
    height: 100%;
-   background-color: #c9fd74;
+   background-color: #fea75f;
    text-transform: uppercase;
 }
 
 .el:nth-of-type(2) {
    position: absolute;
    background-color: black;
-   color: #c9fd74;
+   color: #fea75f;
 }
 
 .el:hover .perspective_text {
@@ -86,4 +95,9 @@
    transform: rotateX(-90deg) translateY(0.7rem);
    transform-origin: bottom center;
    opacity: 0;
+}
+
+/*========================= Hero =========================*/
+.hero {
+   padding: 5rem 10rem 0 10rem;
 }

@@ -24,7 +24,7 @@ const Header = () => {
    const [isActive, setIsActive] = useState(false);
 
    return (
-      <div className="header w-full fixed flex justify-between px-8 py-4">
+      <div className="header w-full fixed flex justify-between px-8 py-4 z-10">
          <div>Logo</div>
          <div className="menu_cnt relative">
             <motion.div
