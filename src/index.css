@@ -8,7 +8,7 @@
 }
 
 body {
-   background-color: black;
+   /* background-color: black; */
 }
 
 /*========================= Header =========================*/
@@ -98,6 +98,38 @@ body {
 }
 
 /*========================= Hero =========================*/
-.hero {
+/* .hero {
    padding: 5rem 10rem 0 10rem;
+} */
+
+/*========================= SVG Line =========================*/
+
+.line {
+   height: 1px;
+   width: 100%;
+}
+
+.line svg {
+   width: 100%;
+   height: 100px;
+   position: absolute;
+   top: -50px;
+}
+
+.line svg path {
+   stroke-width: 1.2px;
+   stroke: black;
+   fill: none;
+}
+
+.line .box {
+   height: 40px;
+   position: relative;
+   top: -20px;
+   z-index: 1;
+}
+
+.line .box:hover {
+   height: 150px;
+   top: -75px;
 }
