@@ -16,7 +16,7 @@ const Home = () => {
 
    return (
       <div className="">
-         <div ref={container} className="relative w-full h-[200vh] font-inter">
+         <div ref={container} className="relative w-full h-[200vh]">
             <Hero scrollYProgress={scrollYProgress} />
             <AboutSection scrollYProgress={scrollYProgress} />
          </div>

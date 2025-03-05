@@ -32,7 +32,7 @@ const Nav = () => {
          exit="exit"
          variants={containerVariants} // Parent controls delay & stagger
       >
-         <div className="nav_body flex flex-col gap-6 text-4xl font">
+         <div className="nav_body flex flex-col gap-6 text-4xl font-medium tracking-wide">
             {NavLinks.map((link, i) => (
                <motion.div key={i} variants={linkVariants}>
                   <NavLink to={link.href}>{link.title}</NavLink>
