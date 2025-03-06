@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
+import ZoomParallax from "./components/ZoomParallax";
 
 const Portfolio = () => {
-  return (
-    <div>Portfolio</div>
-  )
-}
+   return (
+      <>
+         <ZoomParallax />
+      </>
+   );
+};
 
-export default Portfolio
+export default Portfolio;
