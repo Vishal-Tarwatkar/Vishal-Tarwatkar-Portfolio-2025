@@ -16,15 +16,23 @@ const Home = () => {
 
    return (
       <div className="">
+         {/* ================ Hero & About Section ================ */}
          <div ref={container} className="relative w-full h-[200vh]">
             <Hero scrollYProgress={scrollYProgress} />
             <AboutSection scrollYProgress={scrollYProgress} />
          </div>
+         {/* ================ Experience Section ================ */}
          <ExperienceSection />
+         {/* ================ HR Line ================ */}
          <div className="px-10 py-5">
             <MagneticSVGLine />
          </div>
+         {/* ================ Portfolio Section ================ */}
          <PortfolioSection />
+         {/* ================ HR Line ================ */}
+         <div className="px-10 py-5">
+            <MagneticSVGLine />
+         </div>
       </div>
    );
 };

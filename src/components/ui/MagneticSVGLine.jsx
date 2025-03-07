@@ -67,7 +67,7 @@ const MagneticSVGLine = () => {
                onMouseEnter={manageMouseEnter}
                onMouseMove={manageMouseMove}
                onMouseLeave={manageMouseLeave}
-               className="box"
+               className="box "
             ></div>
             <svg className="">
                <path className="" ref={path}></path>

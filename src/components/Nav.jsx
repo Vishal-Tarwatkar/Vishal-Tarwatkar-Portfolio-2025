@@ -48,7 +48,7 @@ export default Nav;
 const NavLinks = [
    { title: "Home", href: "/" },
    { title: "About", href: "/about" },
-   { title: "Work", href: "/work" },
+   { title: "Portfolio", href: "/portfolio" },
    { title: "Blog", href: "/blog" },
    { title: "Contact", href: "/contact" },
 ];

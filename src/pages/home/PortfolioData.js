@@ -1,15 +1,39 @@
-import img1 from "/public/1.jpg";
-import img2 from "/public/2.jpg";
-import img3 from "/public/3.jpg";
-import img4 from "/public/4.jpg";
-import img5 from "/public/5.jpg";
-import img6 from "/public/6.jpg";
+import img1 from "/portfolio/projects/Trawa_1.jpg";
+import img2 from "/portfolio/projects/CS_Website_2.png";
+import img3 from "/portfolio/projects/AH2_3.png";
+import img4 from "/portfolio/projects/PB_4.png";
+import img5 from "/portfolio/projects/Salience_Website_cover_5.png";
+import img6 from "/portfolio/projects/ATG_Website_6.png";
 
 export const portfolioData = [
-   { portfolioTitle: "lorem", tags: ["UX.UI", "Animation"], imgUrl: img1 },
-   { portfolioTitle: "lorem", tags: ["Packaging", "Branding"], imgUrl: img2 },
-   { portfolioTitle: "lorem", tags: ["Packaging", , "Branding"], imgUrl: img3 },
-   { portfolioTitle: "lorem", tags: ["AI", "SAAS"], imgUrl: img4 },
-   { portfolioTitle: "lorem", tags: ["E-Commerce", "Packaging"], imgUrl: img5 },
-   { portfolioTitle: "lorem", tags: ["SAAS", "UX.UI"], imgUrl: img6 },
+   {
+      portfolioTitle: "Trawa",
+      tags: ["Investor Deck", "Design Research", "Brand Identity"],
+      imgUrl: img1,
+   },
+   {
+      portfolioTitle: "Cardboard Spaceship",
+      tags: ["Branded Template", "Social Media Templates"],
+      imgUrl: img2,
+   },
+   {
+      portfolioTitle: "AH2 & Matt Horn",
+      tags: ["Pitch deck"],
+      imgUrl: img3,
+   },
+   {
+      portfolioTitle: "Premium Blend",
+      tags: ["Branded Template"],
+      imgUrl: img4,
+   },
+   {
+      portfolioTitle: "Salience Labs",
+      tags: ["Brand Identity", "Pitch deck"],
+      imgUrl: img5,
+   },
+   {
+      portfolioTitle: "All Things Go",
+      tags: ["Brand Identity", "Pitch deck"],
+      imgUrl: img6,
+   },
 ];
