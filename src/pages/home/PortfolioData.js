@@ -8,7 +8,7 @@ import img6 from "/portfolio/projects/ATG_Website_6.png";
 export const portfolioData = [
    {
       portfolioTitle: "Trawa",
-      tags: ["Investor Deck", "Design Research", "Brand Identity"],
+      tags: ["Investor Deck", "Brand Identity"],
       imgUrl: img1,
    },
    {
