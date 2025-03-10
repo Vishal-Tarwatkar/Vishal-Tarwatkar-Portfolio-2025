@@ -5,6 +5,8 @@ import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import { useScroll } from "framer-motion";
 import MagneticSVGLine from "../../components/ui/MagneticSVGLine";
+import TextMarquee from "./components/TextMarquee";
+import ContactSection from "../../components/ContactSection";
 
 const Home = () => {
    const container = useRef();
@@ -24,15 +26,18 @@ const Home = () => {
          {/* ================ Experience Section ================ */}
          <ExperienceSection />
          {/* ================ HR Line ================ */}
-         <div className="px-10 py-5">
+         <div className="py-12">
             <MagneticSVGLine />
          </div>
          {/* ================ Portfolio Section ================ */}
          <PortfolioSection />
          {/* ================ HR Line ================ */}
-         <div className="px-10 py-5">
+         <div className="py-12">
             <MagneticSVGLine />
          </div>
+         {/* ================ Clients Section ================ */}
+         {/* <TextMarquee /> */}
+         <ContactSection />
       </div>
    );
 };

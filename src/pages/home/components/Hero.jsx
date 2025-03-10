@@ -34,7 +34,7 @@ const Hero = ({ scrollYProgress }) => {
                         className="w-[11rem] h-[5rem] inline-block bg-cover bg-center rounded-full"
                         style={{
                            backgroundImage:
-                              "url(https://i.ibb.co/WvJfrr41/2.jpg)",
+                              "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2YHQSgNFMp-D6uxRU-59qDMb7FjgVn2UFQ&s)",
                         }}
                      ></div>
                   </span>
