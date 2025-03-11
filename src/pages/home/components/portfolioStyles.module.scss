@@ -1,0 +1,58 @@
+.mainContainer {
+   display: flex;
+   gap: 0.5rem;
+   height: 45vw;
+
+   &:nth-child(2) {
+      margin-top: 22vh;
+   }
+
+   .imageContainer {
+      &:nth-of-type(1) {
+         width: 66.66%;
+      }
+      &:nth-of-type(2) {
+         width: 33.33%;
+      }
+
+      .stretchyWrapper {
+         position: relative;
+
+         img {
+            object-fit: cover;
+            border-radius: 0.5rem;
+         }
+      }
+   }
+
+   &:nth-child(even) {
+      .imageContainer {
+         &:nth-of-type(1) {
+            width: 33.33%;
+         }
+         &:nth-of-type(2) {
+            width: 66.66%;
+         }
+      }
+   }
+
+   .upperBody {
+      display: flex;
+      gap: 0.2rem;
+      align-items: center;
+      padding: 0.2rem 0.6rem;
+      h3 {
+         font-size: 1.2rem;
+      }
+   }
+
+   .lowerBody {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.4rem 0.6rem;
+      p {
+         color: #767676;
+      }
+   }
+}

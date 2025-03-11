@@ -7,33 +7,39 @@ import img6 from "/portfolio/projects/ATG_Website_6.png";
 
 export const portfolioData = [
    {
-      portfolioTitle: "Trawa",
+      name: "Trawa",
       tags: ["Investor Deck", "Brand Identity"],
       imgUrl: img1,
+      year: 2023,
    },
    {
-      portfolioTitle: "Cardboard Spaceship",
+      name: "Cardboard Spaceship",
       tags: ["Branded Template", "Social Media Templates"],
       imgUrl: img2,
+      year: 2023,
    },
    {
-      portfolioTitle: "AH2 & Matt Horn",
+      name: "AH2 & Matt Horn",
       tags: ["Pitch deck"],
       imgUrl: img3,
+      year: 2022,
    },
    {
-      portfolioTitle: "Premium Blend",
+      name: "Premium Blend",
       tags: ["Branded Template"],
       imgUrl: img4,
+      year: 2022,
    },
    {
-      portfolioTitle: "Salience Labs",
+      name: "Salience Labs",
       tags: ["Brand Identity", "Pitch deck"],
       imgUrl: img5,
+      year: 2023,
    },
    {
-      portfolioTitle: "All Things Go",
+      name: "All Things Go",
       tags: ["Brand Identity", "Pitch deck"],
       imgUrl: img6,
+      year: 2022,
    },
 ];
